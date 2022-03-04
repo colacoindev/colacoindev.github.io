@@ -35,7 +35,7 @@ $(document).ready(function(){
 			account = result[0];
 			var viewAccount = account.substr(0,8)
 			$("#accountId").text(viewAccount)
-			$("#yqLineId").text("www.colacoin.app?upAddress=" + account)
+			$("#yqLineId").text("https://colacoin.app?upAddress=" + account)
 			const contract = new web3.eth.Contract(JSON.parse(Erc20Abi), lpAddress)
 			const colaContract = new web3.eth.Contract(JSON.parse(colaAbi), colaAddress)
 			
@@ -154,7 +154,7 @@ $(document).ready(function(){
 	
 	// 复制按钮
 	$("#copy").click(function(){
-		var text = "www.colacoin.app?upAddress=" + account;
+		var text = "https://colacoin.app?upAddress=" + account;
 		var flag = copyText(text);//这个必须在DOM对象的事件线程中执行
 		if (flag) {
 			$("#copy-modal").modal()
