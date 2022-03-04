@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#app {
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	overflow-x: hidden;
+}
+
+#app .container-item:nth-child(n+2)  {
+	margin-top: 3px;
+}
+
+#app .container-item {
+	position: relative;
+}
+
+.container-header .header-btn-group {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+.container-header .header-btn-group .header-btn {
+	display: inline-block;
+	background-color: #533832;
+	color: #fff;
+	padding: 5px 15px;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.container-dividend .dividend-await,.container-dividend .dividend-total {
+	position: absolute;
+	transform: scale(0.8);
+}
+
+.container-dividend .dividend-await {
+	top: 17%;
+	right: 25%;
+}
+
+.container-dividend .dividend-total {
+	top: 50%;
+	left: 27%;
+}
+
+.container-dividend .dividend-text {
+	font-size: 14px;
+	font-weight: 500;
+	color: #b3a297;
+}
+
+.container-time .time-countdown {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 30%;
+}
+
+.time-countdown .title {
+	font-size: 20px;
+	font-weight: 500;
+	color: #dbb06b;
+	margin: 0 0 10px 0;
+}
+
+.time-countdown .timer {
+	font-size: 20px;
+	font-weight: 500;
+	color: #dbb06b;
+	margin: 0;
+}
+
+.common-btn {
+	display: inline-block;
+	background: #b5a498;
+	padding: 5px 15px;
+	border-radius: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000;
+}
+
+.container-time .receive-btn {
+	position: absolute;
+	width: 100%;
+	bottom: 12px;
+	text-align: center;
+}
+ 
+.container-invitation .invitation-wrap {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.container-invitation .invitation-link  {
+	width: 70%;
+	background-color: rgba(0,0,0,0.4);
+	text-align: left;
+	padding: 10px;
+	margin: 15px auto;
+	border-radius: 5px;
+	color: #dbb06b;
+	font-size: 12px;
+}
+.invitation-link input {
+	position: absolute;
+	opacity: 0;
+}
+
+.container-invitation .invitation-link  p {
+	margin: 0;
+}
+
+.invitation-btn .common-btn+.common-btn {
+	margin-left: 10px;
+}
+
+/* 弹框样式 */
+.modal-dialog {
+	position: absolute;
+	width: 100%;
+	top: 30%;
+	margin: 0px;
+	height: auto;
+	background-color: #fff;
+	overflow: hidden;
+}
+.modal-dialog .modal-content {
+	text-align: center;
+	box-shadow: none;
+	border: 1px solid #000;
+	border-radius: 25px;
+	padding: 15px 0;
+}
+
+.modal-dialog .modal-content .modal-text {
+	font-size: 24px;
+	margin: 10px 0 15px;
+}
+
+.modal-dialog .modal-content .modal-btn {
+	display: inline-block;
+	padding: 5px 25px;
+	background-color: #dbb16c;
+	border-radius: 15px;
+	color: #000;
+}
+
